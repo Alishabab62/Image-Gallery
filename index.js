@@ -2,14 +2,20 @@ const items=document.getElementById('item-container');
 const addBtn=document.getElementById('btn');
 const cat=document.getElementById('select');
 const link=document.getElementById('text');
+const invalid=document.getElementById('para');
 
 
 addBtn.addEventListener('click',(e)=>{
+    if(link.value==""){
+        invalid.innerText+"No Link present";
+    }
+    else{
     const itemDiv=document.createElement('div');
     const imgTag=document.createElement('img');
     const button=document.createElement('button');
     itemDiv.append(imgTag);
     itemDiv.append(button);
+   
     imgTag.src=link.value;
     button.classList="delete-btn";
     itemDiv.classList=`store-item ${cat.value}`;
@@ -18,7 +24,7 @@ addBtn.addEventListener('click',(e)=>{
     items.appendChild(itemDiv);
     // console.log(itemDiv);
     link.value="";
-
+    }
 });
 items.addEventListener('click',(e)=>{
     if(e.target.classList.contains('delete-btn')){
