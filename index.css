@@ -41,6 +41,12 @@ body{
     padding: 8px 15px;
     border-radius: 8px;
 }
+#para{
+    text-align: center;
+    margin-top: 20px;
+    color: lightsalmon;
+    /* display: none; */
+}
 .container{
     background-color: grey;
     height:100%;
@@ -54,7 +60,7 @@ body{
     width:28%;
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-left: 35%;
     
     

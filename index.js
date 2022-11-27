@@ -7,7 +7,11 @@ const invalid=document.getElementById('para');
 
 addBtn.addEventListener('click',(e)=>{
     if(link.value==""){
-        invalid.innerText+"No Link present";
+        // invalid.style.display="block"
+        invalid.innerText="No Link present";
+        setTimeout(()=>{
+            invalid.innerText="";
+        },1000);
     }
     else{
     const itemDiv=document.createElement('div');
