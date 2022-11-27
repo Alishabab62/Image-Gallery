@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: grey;
+}
+.header{
+    height: 15vh;
+    background-color: mediumpurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.header h3{
+    color: white;
+}
+.add-field{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+}
+#text{
+    border-radius: 8px;
+    height: 30px;
+}
+#select{
+    border-radius: 8px;
+    font-size: 20px;
+    height: 30px;
+}
+#btn{
+    font-size: 20px;
+    background-color: blueviolet;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+.container{
+    background-color: grey;
+    height:100%;
+}
+.container h2{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#filter{
+    width:28%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 35%;
+    
+    
+}
+.btn{
+    padding: 10px 20px;
+    background-color:blueviolet ;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.delete-btn{
+    width:100%;
+    height: 20%;
+    border-radius: 8px;
+    background-color: blueviolet;
+    font-weight: bold;
+}
+#item-container{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    border: 0.5px solid black;
+}
+.store-item{
+    width: 210px;
+    height: 200px;
+    border-radius: 5px;
+    min-width: 200px;
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+}
