@@ -1,13 +1,13 @@
-const items=document.getElementById('item-container');
+const itemContainer=document.getElementById('item-container');
 const addBtn=document.getElementById('btn');
 const cat=document.getElementById('select');
 const link=document.getElementById('text');
 const invalid=document.getElementById('para');
 
 
+let itemArr=[];
 addBtn.addEventListener('click',(e)=>{
     if(link.value==""){
-        // invalid.style.display="block"
         invalid.innerText="No Link present";
         setTimeout(()=>{
             invalid.innerText="";
@@ -19,44 +19,57 @@ addBtn.addEventListener('click',(e)=>{
     const button=document.createElement('button');
     itemDiv.append(imgTag);
     itemDiv.append(button);
-   
     imgTag.src=link.value;
     button.classList="delete-btn";
     itemDiv.classList=`store-item ${cat.value}`;
-    // itemDiv.classList=cat.value;
-    button.innerText ="Delete"
-    items.appendChild(itemDiv);
-    // console.log(itemDiv);
+    button.innerText ="Delete";
+    itemArr.push({
+        "url" : link.value,
+        "type" : cat.value
+    })
+    console.log(itemArr)
+    itemContainer.appendChild(itemDiv);
     link.value="";
     }
 });
-items.addEventListener('click',(e)=>{
+
+//For Delete
+
+itemContainer.addEventListener('click',(e)=>{
     if(e.target.classList.contains('delete-btn')){
+        let imgSrc=e.target.previousElementSibling.src;
+        console.log(imgSrc)
+        let delteIndex=itemArr.findIndex(item=> item.url==imgSrc);
+        itemArr.splice(delteIndex,1);
         e.target.parentNode.remove();
     }
+    console.log(itemArr)
 });
 
-const buttons=document.querySelectorAll('.btn');
-const storeImages=document.querySelectorAll('.store-item');
-buttons.forEach((button)=>{
-    button.addEventListener('click',(e)=>{
-        e.preventDefault();
-        const filter=e.target.dataset.filter;
-        console.log(filter);
-        storeImages.forEach((item)=>{
-            if(filter=='all'){
-                console.log(item);
-                item.style.block="block";
-            }
-            else{
-                if(item.classList.contains(filter)){
-                    item.style.block='block';
-                }else{
-                    item.style.display='none';
-                }
-            }
-        })
+
+
+function filterItem(e){
+    e.preventDefault();
+    const storeImages=document.querySelectorAll('.store-item');
+    const filter=e.target.dataset.filter;
+    storeImages.forEach((item)=>{
+        if(filter == 'all'){
+            item.style.display='block';
+        }
+        else if(item.classList.contains(filter)){
+            item.style.display='block';
+        }else{
+            item.style.display='none';
+        }
     })
+
+}
+
+
+const buttons=document.querySelectorAll('.btn');
+buttons.forEach((filterButton)=>{
+    filterButton.addEventListener('click',filterItem);
 })
 
-// console.log(filter)
+
+
