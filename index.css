@@ -28,12 +28,12 @@ h2 {
     justify-content: center;
     margin-top: 50px;
     align-items: center;
-<<<<<<< HEAD
+
     flex-wrap: wrap;
-=======
+
     /* background-color: red; */
 
->>>>>>> 0abff4623843357092b157749e80040802f1cd8b
+
 }
 #text {
     border-radius: 8px;
@@ -46,17 +46,17 @@ h2 {
     border-radius: 8px;
     font-size: 15px;
     height: 30px;
-<<<<<<< HEAD
+
     margin-right: 20px;
     margin-left: 20px;
-=======
+
     padding: 5px;
->>>>>>> 0abff4623843357092b157749e80040802f1cd8b
+
 }
 #btn {
     font-size: 15px;
     background-color: blueviolet;
-<<<<<<< HEAD
+
     padding: 5px 15px;
     border-radius: 8px;
 }
@@ -66,32 +66,29 @@ h2 {
     border: 3px solid blueviolet;
 }
 #para{
-=======
+
     padding: 4px 8px;
     border-radius: 8px;
 }
 #para {
->>>>>>> 0abff4623843357092b157749e80040802f1cd8b
+
     text-align: center;
     margin-top: 20px;
     color: lightsalmon;
 }
 
-<<<<<<< HEAD
-#filter{
-=======
+
+
+
 #filter {
-    width: 28%;
->>>>>>> 0abff4623843357092b157749e80040802f1cd8b
     display: flex;
     justify-content: center;
     margin-top: 40px;
-<<<<<<< HEAD
+
     flex-wrap: wrap;
     border: none;
-=======
-    margin-left: 35%;
->>>>>>> 0abff4623843357092b157749e80040802f1cd8b
+
+
 }
 .btn {
     padding: 10px 20px;
@@ -102,7 +99,7 @@ h2 {
     margin: 20px;
 
 }
-<<<<<<< HEAD
+
 .delete-btn{
     width:100%;
     height: 20%;
@@ -116,10 +113,9 @@ h2 {
     border: 3px solid blueviolet;
 }
 
-#item-container{
-=======
+
+
 #item-container {
->>>>>>> 0abff4623843357092b157749e80040802f1cd8b
     display: flex;
     margin-top: 50px;
     flex-wrap: wrap;
@@ -147,7 +143,7 @@ img {
     border-radius: 8px;
     border: 0.5px solid black;
 }
-<<<<<<< HEAD
+
 .store-item{
     width: 210px;
     height: 200px;
@@ -202,5 +198,3 @@ img {
     }
         
     }
-=======
->>>>>>> 0abff4623843357092b157749e80040802f1cd8b
