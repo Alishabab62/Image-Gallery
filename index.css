@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
+body {
     background-color: grey;
 }
-.header{
+.header {
     height: 15vh;
     background-color: mediumpurple;
     display: flex;
@@ -15,33 +15,48 @@ body{
     align-items: center;
     font-size: 2rem;
 }
-.header h3{
+
+.header h3 {
     color: white;
 }
-.add-field{
+h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+.add-field {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     align-items: center;
+<<<<<<< HEAD
     flex-wrap: wrap;
+=======
+    /* background-color: red; */
+
+>>>>>>> 0abff4623843357092b157749e80040802f1cd8b
 }
-#text{
+#text {
     border-radius: 8px;
     height: 30px;
     margin-right: 20px;
     margin-left: 20px;
     border: none;
 }
-#select{
+#select {
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 15px;
     height: 30px;
+<<<<<<< HEAD
     margin-right: 20px;
     margin-left: 20px;
+=======
+    padding: 5px;
+>>>>>>> 0abff4623843357092b157749e80040802f1cd8b
 }
-#btn{
-    font-size: 20px;
+#btn {
+    font-size: 15px;
     background-color: blueviolet;
+<<<<<<< HEAD
     padding: 5px 15px;
     border-radius: 8px;
 }
@@ -51,36 +66,43 @@ body{
     border: 3px solid blueviolet;
 }
 #para{
+=======
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+#para {
+>>>>>>> 0abff4623843357092b157749e80040802f1cd8b
     text-align: center;
     margin-top: 20px;
     color: lightsalmon;
-    /* display: none; */
-}
-.container{
-    background-color: grey;
-    height:100%;
-}
-.container h2{
-    text-align: center;
-    padding-top: 30px;
 }
 
+<<<<<<< HEAD
 #filter{
+=======
+#filter {
+    width: 28%;
+>>>>>>> 0abff4623843357092b157749e80040802f1cd8b
     display: flex;
     justify-content: center;
     margin-top: 40px;
+<<<<<<< HEAD
     flex-wrap: wrap;
     border: none;
+=======
+    margin-left: 35%;
+>>>>>>> 0abff4623843357092b157749e80040802f1cd8b
 }
-.btn{
+.btn {
     padding: 10px 20px;
-    background-color:blueviolet ;
+    background-color: blueviolet;
     color: white;
     border-radius: 8px;
     font-weight: bold;
     margin: 20px;
 
 }
+<<<<<<< HEAD
 .delete-btn{
     width:100%;
     height: 20%;
@@ -95,17 +117,37 @@ body{
 }
 
 #item-container{
+=======
+#item-container {
+>>>>>>> 0abff4623843357092b157749e80040802f1cd8b
     display: flex;
     margin-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
 }
-img{
+.store-item {
+    width: 210px;
+    height: 150px;
+    min-width: 200px;
+    margin:40px 22px 50px 21px;
+}
+.delete-btn {
     width: 100%;
-    height: 80%;
+    height: 20%;
+    max-height: 50px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     border: 0.5px solid black;
 }
+<<<<<<< HEAD
 .store-item{
     width: 210px;
     height: 200px;
@@ -160,3 +202,5 @@ img{
     }
         
     }
+=======
+>>>>>>> 0abff4623843357092b157749e80040802f1cd8b
